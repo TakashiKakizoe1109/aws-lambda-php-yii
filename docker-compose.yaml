@@ -1,0 +1,10 @@
+version: "3.6"
+
+services:
+  lambda-php-yii:
+    container_name: lambda-php-yii
+    build: .
+    ports:
+      - "9000:8080"
+    env_file:
+      - .env
